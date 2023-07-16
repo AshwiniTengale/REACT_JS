@@ -1,24 +1,15 @@
-import { useState } from 'react';
-import DatePicker from "react-datepicker";
-import "react-datepicker/dist/react-datepicker.css";
+import logo from './logo.svg';
 import './App.css';
 
+import Message from './Components/Message';
 function App() {
-  const [number,setnumber]=useState(10);
- function increase(){
-  setnumber(20);
-
- }
- const [startDate,setStartDate]=useState(new Date());
-
   return (
     <div className="App">
-    
-     <h1>Hello World!!!!!{number}</h1>
-     <p onClick={()=>increase()}>Change</p>
-     <DatePicker selected={startDate} onChange={(date) => setStartDate(date)} />
+         
+         <Message></Message>
+
+
     </div>
   );
 }
-
 export default App;
