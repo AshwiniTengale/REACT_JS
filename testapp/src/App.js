@@ -8,10 +8,19 @@ import EventBind from './Components/EventBind';
 import ParentComponent from './Components/ParentComponent';
 import Usergreeting from './Components/Usergreeting';
 import NameList from './Components/NameList';
+import Stylesheet from './Components/Stylesheet';
+import Inline from './Components/Inline';
+import './appStyle.css'
+import styles from './appStyles.module.css'
+
 function App() {
   return (
     <div className="App">
-      <NameList/>
+      <h1 className='error'>Error</h1>
+      <h1 className={styles.success}>Success</h1>
+      <Inline/>
+      {/* <Stylesheet primary={true}/> */}
+      {/* <NameList/> */}
       {/* <Usergreeting/> */}
       {/* <ParentComponent/> */}
       {/* <EventBind/> */}

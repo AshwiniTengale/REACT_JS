@@ -4,8 +4,8 @@ import Childname from './Childname'
 
 function NameList() {
 
-//     const names=['ashwini','jaani']
-//    const namelist= names.map(names => <h1>{names}</h1>)
+    const names=['ashwini','jaani','jaani']
+   const namelist= names.map((names,index) => <h1 key={index}>{index}{names}</h1>)
 
 const persons=[
       {
@@ -22,11 +22,11 @@ const persons=[
         }
 ]
 
-const personlist= persons.map(person =>( <Childname person={person}></Childname>))
+// const namelist= names.map(name =><h1>{name}</h1>)
 
   return (
     <div>
-       {personlist}
+       {namelist}
     </div>
   )
 }
