@@ -35,20 +35,21 @@ import React, { Component } from 'react'
 
 
     render() {
+        const {username,lastname,topic}=this.state
     return (
       <div>
         <form onSubmit={this.submitform}>
             <div>
                 <label>Username</label>
-                <input type='text' value={this.state.username} onChange={this.handleusername}></input>
+                <input type='text' value={username} onChange={this.handleusername}></input>
             </div>
             <div>
                 <label>Last name</label>
-                <input type='text' value={this.state.lastname} onChange={this.handlelastname}></input>
+                <input type='text' value={lastname} onChange={this.handlelastname}></input>
             </div>
             <div>
                 <label>Topic</label>
-                <select value={this.state.topic} onChange={this.handletopic}>
+                <select value={topic} onChange={this.handletopic}>
                     <option value="Jimin" >Jimin</option>
                     <option value="V">V</option>
                     <option value="Jungkook" >Jungkook</option>
